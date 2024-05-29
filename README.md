@@ -35,6 +35,8 @@ These DLLs can be found on the utility server in:
 3. Set Up A Testing Console App
 Create a new C# console app in the same solution. Import those same DLLs to the console app. You will use this console app to test your assembly outside of the Syteline Frontend.
 
+![Add a Console App to the Project](./images/AddTestingApp.gif "Add the console app to the project") 
+
 4. Create the Static Methods
 These methods contain the actual "work" that the Custom Assembly does. Since we make 
 these static, we can access them without instantiating the whole Mongoose infrastructure.
