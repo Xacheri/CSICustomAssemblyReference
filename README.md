@@ -1,4 +1,4 @@
-# CNH Custom Assembly Reference Guide
+# Custom Assembly Reference Guide
 
 The purpose of this repository is to provide a guide and reference for developing Infor Syteline Custom Assemblies/IDO Extension Classes.
 This includes both instructional markdown documents as well as C# utility classes that you can use while developing Custom Assemblies.
