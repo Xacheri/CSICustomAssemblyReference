@@ -33,9 +33,18 @@ These DLLs can be found on the utility server in:
 ![Import the DLL](./images/importthedll.gif "Import the DLL")
 
 3. Set Up A Testing Console App
-Create a new C# console app in the same solution. Import those same DLLs to the console app. You will use this console app to test your assembly outside of the Syteline Frontend.
+Create a new C# console app in the same solution. Import those same DLLs to the console app, if they are not there already. You will use this console app to test your assembly outside of the Syteline Frontend.
 
 ![Add a Console App to the Project](./images/AddTestingApp.gif "Add the console app to the project") 
+
+4. In the class library, extend the IDOExtensionClass like so: 
+```csharp
+    [IDOExtensionClass("CNH_DevelopmentTasks")]
+    public class CNH_DevelopmentTaskAssembly : IDOExtensionClass
+    {
+        
+    }
+```
 
 4. Create the Static Methods
 These methods contain the actual "work" that the Custom Assembly does. Since we make 
