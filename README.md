@@ -171,7 +171,7 @@ The keyboard shortcut to build is, predictably, Ctrl+B
 
 ## 9. Import the project into SyteLine 
 Use the "IDO Extension Class Assemblies" form to import the Assembly. You must include 
-both the Symbols as well as the built .dll file.
+both the Symbols as well as the built .dll file (Assembly).
 
 
 

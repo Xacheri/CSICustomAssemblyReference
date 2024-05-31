@@ -67,7 +67,13 @@ namespace CNH_DevelopmentTaskAssemblyTEST
                         WriteDataTableToConsole((DataTable)result);
                     }
                     else {
-                        Console.WriteLine($"Method {selectedMethod.Name} executed with parameters {parameterValues.ToString()}");
+                        Console.Write($"Method {selectedMethod.Name} executed with parameters: ");
+                        for(int i = 1; i < parameterValues.Length; i++) // first parameter is the session context, we want to ignore it
+                        {
+                            string p = parameterValues[i].ToString();
+                     
+                            Console.Write($"{p}, ");
+                        }
                     }
                 }
                 catch (Exception ex)
