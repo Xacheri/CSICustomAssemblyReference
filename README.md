@@ -9,11 +9,11 @@ Find a quick reference guide for relevant Classes/Interfaces/Methods [here]('./r
 
 # Quick Start
 
-1. Create an empty C# project (Class Library) in Visual Studio
+## 1. Create an empty C# project (Class Library) in Visual Studio
 ![Create a class library](./images/newproject.png "Create a new project")
 ![Name your project](./images/newproject_name.png "Name the project")
 
-2. Import the SyteLine DLLs
+## 2. Import the SyteLine DLLs
 In order to access Mongoose/SyteLine code, we must import it. There are 8 DLLs that must be imported:
 - IDOCore.dll 
 - IDOProtocol.dll 
@@ -32,12 +32,12 @@ These DLLs can be found on the utility server in:
 ![Get the DLL from the server](./images/dll_location.png "Find the DLLs")
 ![Import the DLL](./images/importthedll.gif "Import the DLL")
 
-3. Set Up A Testing Console App
+## 3. Set Up A Testing Console App
 Create a new C# console app in the same solution. Import those same DLLs to the console app, if they are not there already. You will use this console app to test your assembly outside of the Syteline Frontend.
 
 ![Add a Console App to the Project](./images/AddTestingApp.gif "Add the console app to the project") 
 
-4. In the class library, extend the IDOExtensionClass like so: 
+## 4. In the class library, extend the IDOExtensionClass like so: 
 ```csharp
     [IDOExtensionClass("CNH_DevelopmentTasks")]
     public class CNH_DevelopmentTaskAssembly : IDOExtensionClass
@@ -46,7 +46,7 @@ Create a new C# console app in the same solution. Import those same DLLs to the 
     }
 ```
 
-4. Create the Static Methods
+## 5. Create the Static Methods
 These methods contain the actual "work" that the Custom Assembly does. Since we make 
 these static, we can access them without instantiating the whole Mongoose infrastructure.
 
@@ -75,13 +75,12 @@ these static, we can access them without instantiating the whole Mongoose infras
             return returnData;
         }
 ```
-5. Link the Static Methods into the non-static methods with decorators
+## 6. Link the Static Methods into the non-static methods with decorators
 These are the methods that Syteline will call. Simply pass the base.Context to the static method as well as any parameters.
 
 ```csharp
         /// <summary>
         /// SyteLine uses this method to hook into the class
-
         /// </summary>
         /// <returns>A result set of tasks</returns>
         [IDOMethod(MethodFlags.CustomLoad, "Infobar")]
@@ -92,7 +91,7 @@ These are the methods that Syteline will call. Simply pass the base.Context to t
         }
 ```
 
-6. Write Testing Console App
+## 7. Write Testing Console App
 By now, you have created a custom assembly, but you need to test it. Switch over to the Console App and structure it like so:
 ```csharp 
     internal class Program
@@ -166,10 +165,11 @@ Going over this code, the key pieces are:
 ```
 
 
-7. Build the project
+## 8. Build the project
 Building the project will generate a .dll and a symbols file that you will use when importing the CA into the Syteline System.
+The keyboard shortcut to build is, predictably, Ctrl+B
 
-7. Import the project into SyteLine 
+## 9. Import the project into SyteLine 
 Use the "IDO Extension Class Assemblies" form to import the Assembly. You must include 
 both the Symbols as well as the built .dll file.
 
