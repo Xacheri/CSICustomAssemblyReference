@@ -25,7 +25,7 @@ In order to access Mongoose/SyteLine code, we must import it. There are 8 DLLs t
 - WSFormServerProtocol.dll 
 
 These DLLs can be found on the utility server in:
-``sh
+```sh
 <InstallerDirectory>/<DatedFolder>/Server/WinStudio/
 ```
 
@@ -50,6 +50,18 @@ Create a new C# console app in the same solution. Import those same DLLs to the 
 These methods contain the actual "work" that the Custom Assembly does. Since we make 
 these static, we can access them without instantiating the whole Mongoose infrastructure.
 
+```csharp 
+        /// <summary>
+        /// SyteLine uses this method to hook into the class
+        /// </summary>
+        /// <returns>A result set of tasks</returns>
+        [IDOMethod(MethodFlags.CustomLoad, "Infobar")]
+        public DataTable CNH_GetAllTasks()
+        {
+            // even though we call it "context" elsewhere, it is actually Context.Commands
+            return CNH_GetAllTasksProcess(base.Context.Commands);
+        }
+```
 5. Link the Static Methods into the non-static methods with decorators
 These are the methods that Syteline will call. Simply pass the base.Context to the static method as well as any parameters.
 
