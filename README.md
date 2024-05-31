@@ -25,7 +25,7 @@ In order to access Mongoose/SyteLine code, we must import it. There are 8 DLLs t
 - WSFormServerProtocol.dll 
 
 These DLLs can be found on the utility server in:
-```sh
+``sh
 <InstallerDirectory>/<DatedFolder>/Server/WinStudio/
 ```
 
@@ -51,9 +51,97 @@ These methods contain the actual "work" that the Custom Assembly does. Since we 
 these static, we can access them without instantiating the whole Mongoose infrastructure.
 
 5. Link the Static Methods into the non-static methods with decorators
-These are the methods that Syteline will call. Simply pass the base.Context to the static method as well as any parameters 
+These are the methods that Syteline will call. Simply pass the base.Context to the static method as well as any parameters.
 
-6. Build the project
+```csharp
+        /// <summary>
+        /// SyteLine uses this method to hook into the class
+
+        /// </summary>
+        /// <returns>A result set of tasks</returns>
+        [IDOMethod(MethodFlags.CustomLoad, "Infobar")]
+        public DataTable CNH_GetAllTasks()
+        {
+            // even though we call it "context" elsewhere, it is actually Context.Commands
+            return CNH_GetAllTasksProcess(base.Context.Commands);
+        }
+```
+
+6. Write Testing Console App
+By now, you have created a custom assembly, but you need to test it. Switch over to the Console App and structure it like so:
+```csharp 
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string slserver = "http://your-server/IDORequestService/RequestService.aspx";
+
+            try
+            {
+                using (Client context = new Client(slserver, IDOProtocol.Http))
+                {
+                    OpenSessionResponseData opnSesRes = context.OpenSession("username", "password", "siteconfig");
+
+                    if (opnSesRes.Result.ToString() != "Success") { throw new Exception(opnSesRes.Result.ToString()); }
+
+                    Console.WriteLine("Welcome to the Extension Class Testing Framework. Which method would you like to test?");
+
+                    Type type = typeof(CNH_DevelopmentTaskAssembly);
+                    TestingFrameworkMethods.PromptAndExecuteExtensionMethod(type, context);
+                }
+
+            } catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+        }
+    }
+```
+
+Going over this code, the key pieces are:
+```csharp
+    // defines the server to attempt IDO Requests to 
+    string slserver = "http{s}://{YourSytelineUtilityServer}/IDORequestService/RequestService.aspx";
+```
+```csharp
+    // the try-catch around all work that might access data makes a last line of defense to catch and inform you of errors 
+    // in particular, connection/configuration errors
+    try
+    {
+        // code here...
+    } catch (Exception ex)
+    {
+        Console.WriteLine(ex.Message);
+    }
+```
+```csharp
+    // By using a Using statment to control disposal of the Client 
+    // We make sure that our session closes, even if we catch an exception, as long as the program completes on it's own.
+    using (Client context = new Client(slserver, IDOProtocol.Http))
+    {
+        // more code here ...
+    }
+```
+```csharp
+    // This line opens a session and fills opnSesRes with data about that process. Particularly "opnSesRes.Result" will have the connection response.
+    // If you use a workstation login, you will need to setup a password in syteline
+    // Note that only 1 programmatic IDO session per user can be open at one time
+    OpenSessionResponseData opnSesRes = context.OpenSession("{user@domain.com}", "{userpassword}", "{configuration/site name}");
+```
+```csharp
+    // This line throws an exception (triggering the catch() block) if the connection was unsuccessful
+    if (opnSesRes.Result.ToString() != "Success") { throw new Exception(opnSesRes.Result.ToString()); }
+```
+```csharp 
+    // These lines use the TestingFrameworkMethods.cs (found in this repo in code/)
+    // to render a user interface for selecting and executing methods in the class CNH_DevelopmentTaskAssembly 
+    Type type = typeof(CNH_DevelopmentTaskAssembly);
+    TestingFrameworkMethods.PromptAndExecuteExtensionMethod(type, context);
+```
+
+
+7. Build the project
 Building the project will generate a .dll and a symbols file that you will use when importing the CA into the Syteline System.
 
 7. Import the project into SyteLine 
