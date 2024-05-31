@@ -52,14 +52,27 @@ these static, we can access them without instantiating the whole Mongoose infras
 
 ```csharp 
         /// <summary>
-        /// SyteLine uses this method to hook into the class
+        /// Returns a DataTable representing results for a Custom Load Method
         /// </summary>
-        /// <returns>A result set of tasks</returns>
-        [IDOMethod(MethodFlags.CustomLoad, "Infobar")]
-        public DataTable CNH_GetAllTasks()
-        {
-            // even though we call it "context" elsewhere, it is actually Context.Commands
-            return CNH_GetAllTasksProcess(base.Context.Commands);
+        /// <param name="context">IIDOCommands to the Syteline Environment</param>
+        /// <returns>A DataTable of tasks</returns>
+        public static DataTable CNH_GetAllTasksProcess(IIDOCommands context) {
+            string columns = "CNH_TaskName, CNH_TaskDesc, CNH_Assignee";
+            DataTable returnData = new DataTable();
+            foreach( string col in columns.Split(','))
+            {
+                returnData.Columns.Add(col.Trim());
+            }
+            LoadCollectionRequestData request = new LoadCollectionRequestData()
+            {
+                IDOName = "CNH_DevelopmentTasks",
+                PropertyList = new PropertyList("CNH_TaskName, CNH_TaskDesc, CNH_Assignee"),
+                RecordCap = -1
+            };
+
+            LoadCollectionResponseData response = context.LoadCollection(request);
+            response.Fill(returnData);
+            return returnData;
         }
 ```
 5. Link the Static Methods into the non-static methods with decorators
