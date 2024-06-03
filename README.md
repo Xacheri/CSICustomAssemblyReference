@@ -5,7 +5,7 @@ This includes both instructional markdown documents as well as C# utility classe
 
 # Class/Interface Reference
 
-Find a quick reference guide for relevant Classes/Interfaces/Methods [here]('./reference.md')
+Find a quick reference guide for relevant Classes/Interfaces/Methods [here]('reference.md')
 
 # Quick Start
 
