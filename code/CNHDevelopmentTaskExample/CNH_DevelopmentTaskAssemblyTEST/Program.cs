@@ -15,13 +15,13 @@ namespace CNH_DevelopmentTaskAssemblyTEST
     {
         static void Main(string[] args)
         {
-            string slserver = "http://server-name/IDORequestService/RequestService.aspx";
+            string slserver = "http://yoursever/IDORequestService/RequestService.aspx";
 
             try
             {
                 using (Client context = new Client(slserver, IDOProtocol.Http))
                 {
-                    OpenSessionResponseData opnSesRes = context.OpenSession("user", "password", "siteconfig");
+                    OpenSessionResponseData opnSesRes = context.OpenSession("user", "pw!", "siteconfig");
 
                     if (opnSesRes.Result.ToString() != "Success") { throw new Exception(opnSesRes.Result.ToString()); }
 

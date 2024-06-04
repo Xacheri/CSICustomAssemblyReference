@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = CNHDevelopmentTaskExample
+build_property.ProjectDir = C:\repo\CNHReman.CustomAssemblyReference\code\CNHDevelopmentTaskExample\CNHDevelopmentTaskExample\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

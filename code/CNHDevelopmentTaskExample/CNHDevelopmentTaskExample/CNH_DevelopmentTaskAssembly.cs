@@ -128,7 +128,7 @@ namespace CNHDevelopmentTaskExample
         )
         {
             // set up the data table for returning
-            string columns = "Username, EmailAddress, CNH_TaskName, CNH_TaskDesc, CNH_Assignee, CNH_TaskDue";
+            string columns = "TaskName, TaskDue, UserName, UserId, Assignee, Alias, Email";
             DataTable returnData = new DataTable();
             foreach( string col in columns.Split(','))
             {
@@ -168,6 +168,12 @@ namespace CNHDevelopmentTaskExample
             baseRequest.AddNestedRequest(request);
 
             LoadCollectionResponseData loadCollectionResponseData = context.LoadCollection(baseRequest);
+            for (int i = 0; i < loadCollectionResponseData.Items.Count; i++)
+            {
+                loadCollectionResponseData.Items[i] = CNH_AssemblyUtils.FlattenItem(loadCollectionResponseData.Items[i]);
+            }
+
+            loadCollectionResponseData.PropertyList = new PropertyList("TaskName, TaskDue, UserName, UserId, Assignee, Alias, Email");
 
             loadCollectionResponseData.Fill(returnData);
 

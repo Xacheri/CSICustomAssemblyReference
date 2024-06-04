@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CNH_DevelopmentTaskAssemblyTEST")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9e7ec3212174fcb6e7878f568393ef901c2cd10")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c2ce4805d25323f0790aa03eb3dd8dc087a57a8")]
 [assembly: System.Reflection.AssemblyProductAttribute("CNH_DevelopmentTaskAssemblyTEST")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CNH_DevelopmentTaskAssemblyTEST")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

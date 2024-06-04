@@ -10,5 +10,22 @@ namespace CNHDevelopmentTaskExample
 {
     internal class CNH_AssemblyUtils
     {
+        public static IDOItem FlattenItem(IDOItem item)
+        {
+            IDOItem unionedItem = item;
+            if(item.NestedResponses.Count == 0)
+            {
+                return item;
+            }
+            foreach (LoadCollectionResponseData nestedResponse in item.NestedResponses)
+            {
+              foreach (IDOItem nestedItem in nestedResponse.Items)
+              {
+                  var flattenedNestedItem = FlattenItem(nestedItem);
+                  unionedItem.PropertyValues.AddRange(flattenedNestedItem.PropertyValues);
+              }
+            }
+            return unionedItem;
+        }
     }
 }
