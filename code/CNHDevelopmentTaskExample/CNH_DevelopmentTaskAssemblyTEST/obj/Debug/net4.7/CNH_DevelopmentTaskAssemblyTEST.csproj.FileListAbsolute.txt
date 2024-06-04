@@ -1,7 +1,0 @@
-C:\Users\zsmith\source\repos\CNHDevelopmentTaskExample\CNH_DevelopmentTaskAssemblyTEST\obj\Debug\net4.7\CNH_DevelopmentTaskAssemblyTEST.csproj.AssemblyReference.cache
-C:\Users\zsmith\source\repos\CNHDevelopmentTaskExample\CNH_DevelopmentTaskAssemblyTEST\obj\Debug\net4.7\CNH_DevelopmentTaskAssemblyTEST.csproj.SuggestedBindingRedirects.cache
-C:\Users\zsmith\source\repos\CNHDevelopmentTaskExample\CNH_DevelopmentTaskAssemblyTEST\obj\Debug\net4.7\CNH_DevelopmentTaskAssemblyTEST.exe.config
-C:\Users\zsmith\source\repos\CNHDevelopmentTaskExample\CNH_DevelopmentTaskAssemblyTEST\obj\Debug\net4.7\CNH_DevelopmentTaskAssemblyTEST.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\zsmith\source\repos\CNHDevelopmentTaskExample\CNH_DevelopmentTaskAssemblyTEST\obj\Debug\net4.7\CNH_DevelopmentTaskAssemblyTEST.AssemblyInfoInputs.cache
-C:\Users\zsmith\source\repos\CNHDevelopmentTaskExample\CNH_DevelopmentTaskAssemblyTEST\obj\Debug\net4.7\CNH_DevelopmentTaskAssemblyTEST.AssemblyInfo.cs
-C:\Users\zsmith\source\repos\CNHDevelopmentTaskExample\CNH_DevelopmentTaskAssemblyTEST\obj\Debug\net4.7\CNH_DevelopmentTaskAssemblyTEST.csproj.CoreCompileInputs.cache
