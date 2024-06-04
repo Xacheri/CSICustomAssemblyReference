@@ -176,4 +176,7 @@ both the Symbols as well as the built .dll file (Assembly).
 
 
 # Session-Related Errors
--- Show the regular way, with the session management. Then show using(){} method to prevent it.
+Only one IDO session can be open per-user, so it is important that the application closes the connection
+gracefully. 
+
+If it does not, you can use the Session Management form in SyteLine and close your session.

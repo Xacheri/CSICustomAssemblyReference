@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net4.8</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="IDOCore">
+      <HintPath>..\..\..\Users\zsmith\Desktop\IDOCore.dll</HintPath>
+    </Reference>
+    <Reference Include="IDOProtocol">
+      <HintPath>..\..\..\Users\zsmith\Desktop\IDOProtocol.dll</HintPath>
+    </Reference>
+    <Reference Include="IDORequestClient">
+      <HintPath>..\..\..\Users\zsmith\Desktop\IDORequestClient.dll</HintPath>
+    </Reference>
+    <Reference Include="MGScriptMgr">
+      <HintPath>..\..\..\Users\zsmith\Desktop\MGScriptMgr.dll</HintPath>
+    </Reference>
+    <Reference Include="MGShared">
+      <HintPath>..\..\..\Users\zsmith\Desktop\MGShared.dll</HintPath>
+    </Reference>
+    <Reference Include="MGSharedResources">
+      <HintPath>..\..\..\Users\zsmith\Desktop\MGSharedResources.dll</HintPath>
+    </Reference>
+    <Reference Include="WSEnums">
+      <HintPath>..\..\..\Users\zsmith\Desktop\WSEnums.dll</HintPath>
+    </Reference>
+    <Reference Include="WSFormServerProtocol">
+      <HintPath>..\..\..\Users\zsmith\Desktop\WSFormServerProtocol.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

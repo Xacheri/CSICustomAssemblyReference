@@ -1,0 +1,211 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\repo\\CNHDevelopmentTaskExample\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{52DA0710-90E1-4825-A197-8846BD4B10CC}|CNHDevelopmentTaskExample\\CNHDevelopmentTaskExample.csproj|c:\\repo\\cnhdevelopmenttaskexample\\cnhdevelopmenttaskexample\\cnh_assemblyutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52DA0710-90E1-4825-A197-8846BD4B10CC}|CNHDevelopmentTaskExample\\CNHDevelopmentTaskExample.csproj|solutionrelative:cnhdevelopmenttaskexample\\cnh_assemblyutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52DA0710-90E1-4825-A197-8846BD4B10CC}|CNHDevelopmentTaskExample\\CNHDevelopmentTaskExample.csproj|c:\\repo\\cnhdevelopmenttaskexample\\cnhdevelopmenttaskexample\\cnh_developmenttaskassembly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52DA0710-90E1-4825-A197-8846BD4B10CC}|CNHDevelopmentTaskExample\\CNHDevelopmentTaskExample.csproj|solutionrelative:cnhdevelopmenttaskexample\\cnh_developmenttaskassembly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1655B7CB-F0A5-4459-89FE-296A4C9CA5F0}|CNH_DevelopmentTaskAssemblyTEST\\CNH_DevelopmentTaskAssemblyTEST.csproj|c:\\repo\\cnhdevelopmenttaskexample\\cnh_developmenttaskassemblytest\\cnh_developmenttaskassemblytest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1655B7CB-F0A5-4459-89FE-296A4C9CA5F0}|CNH_DevelopmentTaskAssemblyTEST\\CNH_DevelopmentTaskAssemblyTEST.csproj|solutionrelative:cnh_developmenttaskassemblytest\\cnh_developmenttaskassemblytest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1655B7CB-F0A5-4459-89FE-296A4C9CA5F0}|CNH_DevelopmentTaskAssemblyTEST\\CNH_DevelopmentTaskAssemblyTEST.csproj|c:\\repo\\cnhdevelopmenttaskexample\\cnh_developmenttaskassemblytest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1655B7CB-F0A5-4459-89FE-296A4C9CA5F0}|CNH_DevelopmentTaskAssemblyTEST\\CNH_DevelopmentTaskAssemblyTEST.csproj|solutionrelative:cnh_developmenttaskassemblytest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1655B7CB-F0A5-4459-89FE-296A4C9CA5F0}|CNH_DevelopmentTaskAssemblyTEST\\CNH_DevelopmentTaskAssemblyTEST.csproj|c:\\repo\\cnhdevelopmenttaskexample\\cnh_developmenttaskassemblytest\\cnh_developmenttaskassemblytest.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{1655B7CB-F0A5-4459-89FE-296A4C9CA5F0}|CNH_DevelopmentTaskAssemblyTEST\\CNH_DevelopmentTaskAssemblyTEST.csproj|solutionrelative:cnh_developmenttaskassemblytest\\cnh_developmenttaskassemblytest.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1655B7CB-F0A5-4459-89FE-296A4C9CA5F0}|CNH_DevelopmentTaskAssemblyTEST\\CNH_DevelopmentTaskAssemblyTEST.csproj|c:\\repo\\cnhdevelopmenttaskexample\\cnh_developmenttaskassemblytest\\testingframeworkmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1655B7CB-F0A5-4459-89FE-296A4C9CA5F0}|CNH_DevelopmentTaskAssemblyTEST\\CNH_DevelopmentTaskAssemblyTEST.csproj|solutionrelative:cnh_developmenttaskassemblytest\\testingframeworkmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52DA0710-90E1-4825-A197-8846BD4B10CC}|CNHDevelopmentTaskExample\\CNHDevelopmentTaskExample.csproj|c:\\repo\\cnhdevelopmenttaskexample\\cnhdevelopmenttaskexample\\cnhdevelopmenttaskexample.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{52DA0710-90E1-4825-A197-8846BD4B10CC}|CNHDevelopmentTaskExample\\CNHDevelopmentTaskExample.csproj|solutionrelative:cnhdevelopmenttaskexample\\cnhdevelopmenttaskexample.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 17,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1924764005:0:{13143d73-808b-4a2f-bebb-ccbe9c93fe37}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CNH_AssemblyUtils.cs",
+              "DocumentMoniker": "C:\\repo\\CNHDevelopmentTaskExample\\CNHDevelopmentTaskExample\\CNH_AssemblyUtils.cs",
+              "RelativeDocumentMoniker": "CNHDevelopmentTaskExample\\CNH_AssemblyUtils.cs",
+              "ToolTip": "C:\\repo\\CNHDevelopmentTaskExample\\CNHDevelopmentTaskExample\\CNH_AssemblyUtils.cs",
+              "RelativeToolTip": "CNHDevelopmentTaskExample\\CNH_AssemblyUtils.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T16:04:10.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CNH_DevelopmentTaskAssembly.cs",
+              "DocumentMoniker": "C:\\repo\\CNHDevelopmentTaskExample\\CNHDevelopmentTaskExample\\CNH_DevelopmentTaskAssembly.cs",
+              "RelativeDocumentMoniker": "CNHDevelopmentTaskExample\\CNH_DevelopmentTaskAssembly.cs",
+              "ToolTip": "C:\\repo\\CNHDevelopmentTaskExample\\CNHDevelopmentTaskExample\\CNH_DevelopmentTaskAssembly.cs",
+              "RelativeToolTip": "CNHDevelopmentTaskExample\\CNH_DevelopmentTaskAssembly.cs",
+              "ViewState": "AQIAAKwAAAAAAAAAAAAqwMYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T15:25:15.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TestingFrameworkMethods.cs",
+              "DocumentMoniker": "C:\\repo\\CNHDevelopmentTaskExample\\CNH_DevelopmentTaskAssemblyTEST\\TestingFrameworkMethods.cs",
+              "RelativeDocumentMoniker": "CNH_DevelopmentTaskAssemblyTEST\\TestingFrameworkMethods.cs",
+              "ToolTip": "C:\\repo\\CNHDevelopmentTaskExample\\CNH_DevelopmentTaskAssemblyTEST\\TestingFrameworkMethods.cs",
+              "RelativeToolTip": "CNH_DevelopmentTaskAssemblyTEST\\TestingFrameworkMethods.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAiwMIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T15:53:20.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CNH_DevelopmentTaskAssemblyTEST",
+              "DocumentMoniker": "C:\\repo\\CNHDevelopmentTaskExample\\CNH_DevelopmentTaskAssemblyTEST\\CNH_DevelopmentTaskAssemblyTEST.csproj",
+              "RelativeDocumentMoniker": "CNH_DevelopmentTaskAssemblyTEST\\CNH_DevelopmentTaskAssemblyTEST.csproj",
+              "ToolTip": "C:\\repo\\CNHDevelopmentTaskExample\\CNH_DevelopmentTaskAssemblyTEST\\CNH_DevelopmentTaskAssemblyTEST.csproj",
+              "RelativeToolTip": "CNH_DevelopmentTaskAssemblyTEST\\CNH_DevelopmentTaskAssemblyTEST.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-31T14:17:49.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\repo\\CNHDevelopmentTaskExample\\CNH_DevelopmentTaskAssemblyTEST\\Program.cs",
+              "RelativeDocumentMoniker": "CNH_DevelopmentTaskAssemblyTEST\\Program.cs",
+              "ToolTip": "C:\\repo\\CNHDevelopmentTaskExample\\CNH_DevelopmentTaskAssemblyTEST\\Program.cs",
+              "RelativeToolTip": "CNH_DevelopmentTaskAssemblyTEST\\Program.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAwwCgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T21:56:12.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CNH_DevelopmentTaskAssemblyTEST.csproj",
+              "DocumentMoniker": "C:\\repo\\CNHDevelopmentTaskExample\\CNH_DevelopmentTaskAssemblyTEST\\CNH_DevelopmentTaskAssemblyTEST.csproj",
+              "RelativeDocumentMoniker": "CNH_DevelopmentTaskAssemblyTEST\\CNH_DevelopmentTaskAssemblyTEST.csproj",
+              "ToolTip": "C:\\repo\\CNHDevelopmentTaskExample\\CNH_DevelopmentTaskAssemblyTEST\\CNH_DevelopmentTaskAssemblyTEST.csproj",
+              "RelativeToolTip": "CNH_DevelopmentTaskAssemblyTEST\\CNH_DevelopmentTaskAssemblyTEST.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-30T21:56:03.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CNHDevelopmentTaskExample.csproj",
+              "DocumentMoniker": "C:\\repo\\CNHDevelopmentTaskExample\\CNHDevelopmentTaskExample\\CNHDevelopmentTaskExample.csproj",
+              "RelativeDocumentMoniker": "CNHDevelopmentTaskExample\\CNHDevelopmentTaskExample.csproj",
+              "ToolTip": "C:\\repo\\CNHDevelopmentTaskExample\\CNHDevelopmentTaskExample\\CNHDevelopmentTaskExample.csproj",
+              "RelativeToolTip": "CNHDevelopmentTaskExample\\CNHDevelopmentTaskExample.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-30T21:56:03.121Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

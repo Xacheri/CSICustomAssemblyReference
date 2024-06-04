@@ -1,0 +1,5 @@
+C:\Users\zsmith\source\repos\CNHDevelopmentTaskExample\CNHDevelopmentTaskExample\obj\Debug\net4.7\CNHDevelopmentTaskExample.csproj.AssemblyReference.cache
+C:\Users\zsmith\source\repos\CNHDevelopmentTaskExample\CNHDevelopmentTaskExample\obj\Debug\net4.7\CNHDevelopmentTaskExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zsmith\source\repos\CNHDevelopmentTaskExample\CNHDevelopmentTaskExample\obj\Debug\net4.7\CNHDevelopmentTaskExample.AssemblyInfoInputs.cache
+C:\Users\zsmith\source\repos\CNHDevelopmentTaskExample\CNHDevelopmentTaskExample\obj\Debug\net4.7\CNHDevelopmentTaskExample.AssemblyInfo.cs
+C:\Users\zsmith\source\repos\CNHDevelopmentTaskExample\CNHDevelopmentTaskExample\obj\Debug\net4.7\CNHDevelopmentTaskExample.csproj.CoreCompileInputs.cache
