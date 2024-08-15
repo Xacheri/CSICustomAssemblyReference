@@ -53,7 +53,12 @@ namespace CNH_DevelopmentTaskAssemblyTEST
                         // Convert input to the appropriate type
                         try
                         {
-                            parameterValues[i] = Convert.ChangeType(input, parameters[i].ParameterType);
+                            Type parameterType = parameters[i].ParameterType;
+                            if (parameterType.IsByRef)
+                            {
+                                parameterType = parameterType.GetElementType();
+                            }
+                            parameterValues[i] = Convert.ChangeType(input, parameterType);
                         }
                         catch (Exception ex)
                         {
