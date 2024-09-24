@@ -28,12 +28,23 @@ namespace CNH_DevelopmentTaskAssemblyTEST
                     Console.WriteLine("Welcome to the Extension Class Testing Framework. Which method would you like to test?");
 
                     Type type = typeof(CNH_DevelopmentTaskAssembly);
-                    TestingFrameworkMethods.PromptAndExecuteExtensionMethod(type, context);
+                    try
+                    {
+                        TestingFrameworkMethods.PromptAndExecuteExtensionMethod(type, context);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                        Console.WriteLine("Press any key to exit.");
+                        Console.ReadLine();
+                    }
                 }
 
             } catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                Console.WriteLine("Press any key to exit.");
+                Console.ReadLine();
             }
 
         }
